@@ -33,6 +33,7 @@
   "dependencies": {
     "@prisma/client": "^5.14.0",
     "fs-extra": "^11.2.0",
+    "mi-gpt": "^4.1.0",
     "mi-service-lite": "^3.0.0",
     "openai": "^4.52.2",
     "prisma": "^5.14.0",
