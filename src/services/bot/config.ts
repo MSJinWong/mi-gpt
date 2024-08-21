@@ -11,12 +11,12 @@ const kDefaultMaster = {
   profile: `
 性别：男
 性格：善良正直
-其他：总是舍己为人，是傻妞的主人。
+其他：总是舍己为人，是小白的主人。
 `.trim(),
 };
 
 const kDefaultBot = {
-  name: "傻妞",
+  name: "小白",
   profile: `
 性别：女
 性格：乖巧可爱

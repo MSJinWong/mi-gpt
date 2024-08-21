@@ -12,7 +12,7 @@ const botProfile = `
 const masterProfile = `
 性别：男
 性格：善良正直
-其他：总是舍己为人，是傻妞的主人。
+其他：总是舍己为人，是小白的主人。
 `.trim();
 
 // 系统 Prompt 模板，可以更灵活的控制 AI 的各种行为规则，和是否需要携带上下文等
@@ -78,7 +78,7 @@ Bad example: "2024年02月28日星期三 23:01 {{botName}}: 我是{{botName}}"
 export default {
   systemTemplate,
   bot: {
-    name: "傻妞",
+    name: "小白",
     profile: botProfile,
   },
   master: {
@@ -102,15 +102,15 @@ export default {
      */
 
     // 当消息以下面的关键词开头时，会调用 AI 来回复消息
-    callAIKeywords: ["请", "你", "傻妞"],
+    callAIKeywords: ["请", "你", "小白"],
     // 当消息以下面的关键词开头时，会进入 AI 唤醒状态
     wakeUpKeywords: ["打开", "进入", "召唤"],
     // 当消息以下面的关键词开头时，会退出 AI 唤醒状态
     exitKeywords: ["关闭", "退出", "再见"],
     // 进入 AI 模式的欢迎语
-    onEnterAI: ["你好，我是傻妞，很高兴认识你"], // 设为空数组时可关闭提示语
+    onEnterAI: ["你好，我是小白，很高兴认识你"], // 设为空数组时可关闭提示语
     // 退出 AI 模式的提示语
-    onExitAI: ["傻妞已退出"], // 为空时可关闭提示语
+    onExitAI: ["小白已退出"], // 为空时可关闭提示语
     // AI 开始回答时的提示语
     onAIAsking: ["让我先想想", "请稍等"], // 为空时可关闭提示语
     // AI 结束回答时的提示语

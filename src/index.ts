@@ -53,6 +53,7 @@ export class MiGPT {
     await initDB(this.speaker.debug);
     const main = () => {
       console.log(kBannerASCII);
+      console.log("DB initialized.");
       return this.ai.run();
     };
     return runWithDB(main);

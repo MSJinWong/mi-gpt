@@ -70,7 +70,7 @@ export default {
 export default {
   speaker: {
     // 当消息以下面的关键词开头时，会调用 AI 来回复消息
-    callAIKeywords: ["请", "你", "傻妞"],
+    callAIKeywords: ["请", "你", "小白"],
     // 当消息以下面的关键词开头时，会进入 AI 唤醒状态
     wakeUpKeywords: ["打开", "进入", "召唤"],
     // ...
@@ -87,7 +87,7 @@ export default {
    4. 此阶段无法做到连续对话，每次提问都要以“小爱同学，请 xxx”开头。
 2. **进入唤醒模式**
    1. 唤醒模式（AI 模式）类似小爱技能，进入后可以连续对话
-   2. 使用 `wakeUpKeywords` 即可进入唤醒模式，比如“小爱同学，召唤傻妞”
+   2. 使用 `wakeUpKeywords` 即可进入唤醒模式，比如“小爱同学，召唤小白”
    3. 进入唤醒模式后，每次提问请等待小爱回答“我说完了”之后，再继续向她提问
    4. 此时，可直接向小爱提问题，无需再以“小爱同学，xxx”开头。
 
@@ -232,7 +232,7 @@ docker run -d --env-file D:/hello/mi-gpt/.env -v D:/hello/mi-gpt/.migpt.js:/app/
 export default {
   speaker: {
     // 当消息以下面的关键词开头时，会调用 AI 来回复消息
-    callAIKeywords: ["请", "你", "傻妞"],
+    callAIKeywords: ["请", "你", "小白"],
     // ...
   },
 };

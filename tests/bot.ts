@@ -7,7 +7,7 @@ export async function testMyBot() {
 }
 
 async function testRunBot() {
-  const name = "傻妞";
+  const name = "小白";
   const speaker = new AISpeaker({
     name,
     tts: "custom",
@@ -23,7 +23,7 @@ async function testRunBot() {
     },
     master: {
       name: "陆小千",
-      profile: `性别男，善良正直，总是舍己为人，是傻妞的主人。`,
+      profile: `性别男，善良正直，总是舍己为人，是小白的主人。`,
     },
   });
   const res = await bot.run();
